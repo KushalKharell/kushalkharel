@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Kushal Kharel</title>
+    <link href="styleC.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+(function() {
+emailjs.init("user_sW6gBdBakHNHCyv5lYIVX");
+})();
+</script>
+
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+    
+    <header>
+      <div class = "container"> 
+          <div id = "branding">
+               
+              <h1> <span class = "highlight"> <img class = "logo" src = "Monochrome.jpg"></span> </h1>
+              
+          </div>
+          <nav>
+              <ul>
+                 <li> <a href = "index.html">About</a></li>
+                 <li> <a href = "Project.html">Project</a></li>
+                  <li> <a href = "Skill.html">skills</a></li>
+                 <li> <a href = "Resume.html">Resume</a></li>
+                 <li class = "current"> <a href = "Contact.html">Contact me</a></li>
+                     
+          </nav>
+      </div>
+
+   
+    </header>
+
+
+
+<!--here we make the contact page , -->
+
+ <div class = "contact">
+   <h1>Connect With Me</h1>
+   <p>I would love to respond to your inquiries</p>
+
+   <div class = "contact-box">
+      <div class = "contact-left">
+          <h3>Send your inquiries</h3>
+          <form>
+            <div class = "input-row">
+              <div class = "input-group">
+                <label>Name</label>
+                <input type ="text" id = "Personname" placeholder="enter name">
+              </div>
+              <div class = "input-group">
+                <label>Phone</label>
+                <input type ="text" id = "PhoneNum" placeholder="enter phone number">
+              </div>
+
+            </div>
+
+
+            <div class = "input-row">
+              <div class = "input-group">
+                <label>Email</label>
+                <input type ="email" id = "Emails"  placeholder="enter Email">
+              </div>
+              <div class = "input-group">
+                <label>Subject</label>
+                <input type ="text" id = "subj" placeholder="question">
+              </div>
+
+            </div>
+
+            <label>Message</label>
+            <textarea rows="5" id = "msg" placeholder="enter message"></textarea>
+            <button type ="submit" onclick="sendMail()">Send</button>
+          </form>
+      </div>
+      <div class = "contact-right">
+           <h3>Reach me</h3>
+           <table>
+             <tr>
+               <td>Email</td>
+                <td>kkharel286@gmail.com</td>
+             </tr>
+              <tr>
+               <td>Phone</td>
+                <td>412-628-8537</td>
+             </tr>
+              <tr>
+               <td>Address</td>
+                <td>Pittsburgh, PA</td>
+             </tr>
+           </table>
+      </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+<!--here we make the contact page , -->
+  </body>
+</html>

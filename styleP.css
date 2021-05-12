@@ -1,0 +1,314 @@
+body{
+  font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;;
+  font-size: 15px; 
+  line-height: 1.5; 
+  padding: 0; 
+  margin: 0; 
+   background: linear-gradient(-45deg, white, lightgray, gray, darkgray);
+  background-size: 400% 400%; 
+  animation: colorchange 9s ease-in-out infinite;
+}
+
+@keyframes colorchange {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+/*Global here */
+.container{
+  width: 80%; 
+  margin: auto; 
+  overflow: hidden;
+
+}
+
+ ul{
+  margin: 0; 
+  padding: 0; 
+
+}
+
+/*header */
+header{
+   background-color: #000000; 
+   color: #ffffff; 
+   padding-top: 10px; 
+   min-height: 60px; 
+   border-bottom: #33333D 2px solid; 
+   text-align: center;
+   animation: transitionIN 1.5s;
+   font-weight: bold;
+}
+
+header a{
+  color: #ffffff; 
+  text-decoration: none; 
+  text-transform: lowercase; 
+  font-size: 17px; 
+}
+
+header li{
+   
+  display: inline;
+  padding: 0 20px 0 20px; 
+ 
+}
+
+.container a:hover{
+  
+  
+ border-bottom: 2px solid rgb(41, 11, 124);
+ 
+ color: gray;
+ transition: .4s;
+ 
+}
+ header .current a{
+  color: rgb(38, 134, 197); 
+  font-weight: bold; 
+  
+}
+
+@keyframes transitionIN{
+  from{
+    
+    opacity: 0;
+
+  }
+  to{
+     
+     opacity: 1;
+  }
+}
+
+.logo{
+ 
+  float: left;
+  height: 50px;
+  width: 50px;
+  text-indent: -9999px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+
+/*new shit for the project section*/
+.ProjectBoxes1{
+  margin-top: 40px;
+  
+}
+
+.box1 { 
+  float:left;  
+  background:lightgray; 
+  width:20%; 
+  height:250px; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 10%;
+  border-radius: 4%;
+  text-align: center;
+  animation: ProjectMove 1s;
+ } 
+
+ .box2 { 
+  float:left;  
+  background:lightgray; 
+  width:20%; 
+  height:250px; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 10%;
+  border-radius: 4%;
+  text-align: center;
+  animation: ProjectMove 1.5s;
+ } 
+
+ .box3 { 
+  float:left;  
+  background:lightgray; 
+  width:20%; 
+  height:250px; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 10%;
+  border-radius: 4%;
+  text-align: center;
+  animation: ProjectMove 2s;
+ } 
+
+ .ProjectBoxes2{
+
+ padding-top: 300px;
+
+}
+
+.box4 { 
+  float:left;  
+  background:lightgray; 
+  width:20%; 
+  height:250px; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 10%;
+  border-radius: 4%;
+  text-align: center;
+  animation: ProjectMove2 2s;
+ } 
+
+ .box5 { 
+  float:left;  
+  background:lightgray; 
+  width:20%; 
+  height:250px; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 10%;
+  border-radius: 4%;
+  text-align: center;
+  animation: ProjectMove2 1.5s;
+ } 
+
+ .box6 { 
+  float:left;  
+  background:lightgray; 
+  width:20%; 
+  height:250px; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 10%;
+  border-radius: 4%;
+  text-align: center;
+  animation: ProjectMove2 1s;
+ } 
+
+ @keyframes ProjectMove{
+   0% {
+    transform:translateX(100%);
+  }
+
+  100% {
+    transform:translateX(0);
+  }
+}
+
+@keyframes ProjectMove2{
+   0% {
+    transform:translateX(-100%);
+  }
+
+  100% {
+    transform:translateX(0);
+  }
+}
+
+.box1 {
+  background: url('joy.PNG');
+  background-size: 120%;
+  color: white;
+  background-position: center;
+  text-emphasis: bold;
+}
+
+.blockinfo1{
+  margin-top: 44%;
+  background-color:gray;
+  opacity: 0.9;
+  border: 3px;
+  
+  color: black;
+  background-size: 50%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+
+#project1git{
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  border: lightcyan;
+  height: 14%;
+}
+
+#project1demo{
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  border: lightcyan;
+  height: 14%;
+}
+
+.box2 {
+  background: url('HospitalProject.jpg');
+  background-size: 100%;
+  color: white;
+  text-emphasis: bold;
+}
+
+.blockinfo2{
+  margin-top: 44%;
+  background-color:gray;
+  opacity: 0.9;
+  border: 3px;
+  
+  color: black;
+  background-size: 50%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#project2git{
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  border: lightcyan;
+   height: 14%;
+}
+
+.box3 {
+  background: url('simonGame.jpg');
+  background-size: 100%;
+  color: white;
+  text-emphasis: bold;
+}
+
+.blockinfo3{
+  margin-top: 44%;
+  background-color:gray;
+  opacity: 0.9;
+  border: 3px;
+  
+  color: black;
+  background-size: 50%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#project3git{
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  border: lightcyan;
+   height: 14%;
+}
+
