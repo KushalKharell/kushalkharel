@@ -42,8 +42,16 @@ function git3(){
   window.open('https://github.com/mr7888/Simon-Game-MIPS-32-/find/main'); 
 }
 
+function git4(){ //add the arduino code to git, demo on youtube 
+  window.open('https://github.com/KushalKharell/Arduino-self-driving-car-'); 
+}
+
 //links to pdf version of resume 
 function pdfResume(){
   res = "ActualResume.pdf"
   window.open('https://drive.google.com/file/d/1I_4Lxi2ufrEFQcD6s0EE-cZXmHtnlx-I/view?usp=sharing'); 
+}
+
+function demo2(){
+  window.open('https://drive.google.com/file/d/1FKk8YS_75CzmjMPBWzyD2zW7-q7o0JPo/view?usp=sharing'); 
 }
