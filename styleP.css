@@ -335,4 +335,47 @@ header li{
   height: 14%;
 }
 
+.box5 {
+  background: url('project5.PNG');
+  background-size: 95%;
+  color: white;
+  text-emphasis: bold;
+}
+
+#project5git{
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  border: lightcyan;
+   height: 14%;
+}
+
+.blockinfo5{
+  margin-top: 44%;
+  background-color:gray;
+  opacity: 0.9;
+  border: 3px;
+  
+  color: white;
+  background-size: 50%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box6 {
+  background: url('Project6.PNG');
+  background-size: 120%;
+  color: white;
+  text-emphasis: bold;
+}
+
+#project6git{
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  border: lightcyan;
+   height: 14%;
+}
+
+
 

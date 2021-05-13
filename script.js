@@ -55,3 +55,11 @@ function pdfResume(){
 function demo2(){
   window.open('https://drive.google.com/file/d/1FKk8YS_75CzmjMPBWzyD2zW7-q7o0JPo/view?usp=sharing'); 
 }
+
+function git5(){ //link to java oregan trails game 
+  window.open('https://github.com/KushalKharell/Java-GUI-word-based-game'); 
+}
+
+function git6(){ //link to java oregan trails game 
+  window.open('https://github.com/KushalKharell/Bitmap-memeory-simulation-in-C'); 
+}
