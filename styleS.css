@@ -41,7 +41,7 @@ header{
    color: #ffffff; 
    padding-top: 10px; 
    min-height: 60px; 
-   border-bottom: #33333D 2px solid; 
+   border-bottom: #33333D 1px solid; 
    text-align: center;
    animation: transitionIN 1.5s;
    font-weight: bold;
