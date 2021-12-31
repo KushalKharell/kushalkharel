@@ -1,0 +1,356 @@
+body{
+  font-family: "proxima nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;;
+  font-size: 15px; 
+  line-height: 1.5; 
+  padding: 0; 
+  margin: 0; 
+  background: linear-gradient(-45deg, white, lightgray, gray, darkgray);
+  background-size: 400% 400%; 
+  animation: colorchange 9s ease-in-out infinite;
+}
+
+@keyframes colorchange {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+/*Global here */
+.container{
+  width: 80%; 
+  margin: auto; 
+  overflow: hidden;
+
+}
+
+ ul{
+  margin: 0; 
+  padding: 0; 
+
+}
+
+/*header */
+header{
+   background-color: #000000; 
+   color: #ffffff; 
+   padding-top: 10px; 
+   min-height: 60px; 
+   border-bottom: #33333D 1px solid; 
+   text-align: center;
+   animation: transitionIN 1.5s;
+   font-weight: bold;
+}
+
+header a{
+  color: #ffffff; 
+  text-decoration: none; 
+  text-transform: lowercase; 
+  font-size: 17px; 
+}
+
+header li{
+   
+  display: inline;
+  padding: 0 20px 0 20px; 
+ 
+}
+
+.container a:hover{
+  
+  
+ border-bottom: 2px solid rgb(41, 11, 124);
+ 
+ color: gray;
+ transition: .4s;
+ 
+}
+ header .current a{
+  color: rgb(38, 134, 197); 
+  font-weight: bold; 
+  
+}
+
+@keyframes transitionIN{
+  from{
+    
+    opacity: 0;
+
+  }
+  to{
+     
+     opacity: 1;
+  }
+}
+
+.logo{
+ 
+  float: left;
+  height: 50px;
+  width: 50px;
+  text-indent: -9999px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+/*New shit down here*/
+
+.SkillsBox{
+  margin-top: 10px;
+  
+}
+
+.Programming{ 
+  float:center;  
+  background:lightgray; 
+  width:50%; 
+  height:530px; 
+ 
+  margin-left: 30%;
+  animation: skillboxAn 1.5s;
+  text-align: center;
+ } 
+
+.logos{
+  width:60%; 
+  height:35%; 
+ 
+  margin-left: 20%;
+
+}
+.Java{
+  float: left;
+  margin-top: 4%;
+  margin-left: 8%;
+  width:20%; 
+  height:60%;
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  background: url('java.png'); 
+  background-position: center;
+  background-size: 100%;
+  
+  border-radius: 51%;
+}
+
+.Cpp{
+  float: left;
+  margin-top: 4%;
+  margin-left: 8%;
+  width:20%; 
+  height:60%;
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+   background: url('cpp.png'); 
+  background-position: center;
+  
+  background-size: 115%;
+  border-radius: 51%;
+}
+
+.Python{
+  float: left;
+  margin-top: 4%;
+  margin-left: 8%;
+  width:20%; 
+  height:60%;
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+   background: url('python.png'); 
+  background-position: center;
+  
+  background-size: 100%;
+  border-radius: 51%;
+}
+
+.progBars{
+  width: 90%;
+  height: 50%; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 5%;
+}
+
+.back {
+  width: 90%; /* Full width */
+  background-color: white; /* Grey background */
+  height: 20px;
+  
+}
+.back1 {
+  width: 90%; /* Full width */
+  background-color: white; /* Grey background */
+  height: 20px;
+  
+}
+
+.back2 {
+  width: 90%; /* Full width */
+  background-color: white; /* Grey background */
+  height: 20px;
+  
+}
+
+p{
+  margin-left: 100%;
+
+}
+
+.javaS {width: 90%;background-color: red; animation: javaA 1.5s;}
+.cpp {width: 85%;background-color: blue; animation: cppA 1.5s;} 
+.py {width: 70%;background-color: orange; animation: pyA 1.5s;}  /* Green */
+
+@keyframes javaA{
+   0% {
+    width: 0%;
+  }
+   100% {
+    width: 90%;
+  }
+}
+
+@keyframes cppA{
+   0% {
+    width: 0%;
+  }
+   100% {
+    width: 85%;
+  }
+}
+
+@keyframes pyA{
+   0% {
+    width: 0%;
+  }
+   100% {
+    width: 70%;
+  }
+}
+
+@keyframes skillboxAn{
+   0% {
+    transform:translateX(50%);
+  }
+
+  100% {
+    transform:translateX(0);
+  }
+}
+
+.hardwareLanguages{
+  float:center;  
+  background:lightgray; 
+  width:50%; 
+  height:520px; 
+  margin-top: 5%;
+  margin-left: 30%;
+  animation: skillboxAn 2s;
+  text-align: center;
+
+
+}
+
+.Vhdl{
+  float: left;
+  margin-top: 4%;
+  margin-left: 8%;
+  width:20%; 
+  height:60%;
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  background: url('vhdl.jpg'); 
+  background-position: center;
+  background-size: 100%;
+  
+  border-radius: 51%;
+}
+
+.verilog{
+  float: left;
+  margin-top: 4%;
+  margin-left: 8%;
+  width:20%; 
+  height:60%;
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+   background: url('verilog.jpg'); 
+  background-position: center;
+  
+  background-size: 115%;
+  border-radius: 51%;
+}
+
+.fpga{
+  float: left;
+  margin-top: 4%;
+  margin-left: 8%;
+  width:20%; 
+  height:60%;
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+   background: url('fpga.png'); 
+  background-position: center;
+  
+  background-size: 100%;
+  border-radius: 51%;
+}
+
+.hardBars{
+  width: 90%;
+  height: 50%; 
+  border-bottom: black 5px solid; 
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  margin-left: 5%;
+}
+
+.VHDLS {width: 90%;background-color: green; animation: vhdlA 1.5s;}
+.VerilogS {width: 80%;background-color: gray; animation: verilogA 1.5s;} 
+.FPGAS {width: 85%;background-color: yellow; animation: fpgaA 1.5s;} 
+
+ @keyframes vhdlA{
+   0% {
+    width: 0%;
+  }
+   100% {
+    width: 90%;
+  }
+}
+
+@keyframes verilogA{
+   0% {
+    width: 0%;
+  }
+   100% {
+    width: 80%;
+  }
+}
+
+@keyframes fpgaA{
+   0% {
+    width: 0%;
+  }
+   100% {
+    width: 85%;
+  }
+}
