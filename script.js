@@ -1,7 +1,7 @@
 console.log('works');
 
 function sendMail(params){
-  alert("Your email has been sent. Thank You");
+  alert("Not implemented yet. Thank You");
 
   var tempParam = {
        from_name: document.getElementById("Personname").value,
