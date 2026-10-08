@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Experience | Kushal Kharel</title>
-    <meta name="description" content="Professional experience of Kushal Kharel: embedded and HPC software engineering at GEOST and ChemImage Corporation.">
+    <meta name="description" content="Professional experience of Kushal Kharel: robotics software at Smith+Nephew, plus embedded and HPC software engineering at GEOST and ChemImage Corporation.">
     <link rel="icon" href="icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
           <li><a href="index.html">About</a></li>
           <li><a href="Experience.html" aria-current="page">Experience</a></li>
           <li><a href="Project.html">Projects</a></li>
+          <li><a href="Vlog.html">Vlog</a></li>
           <li><a class="nav-cta" href="https://drive.google.com/file/d/1d7VbMsHnKekwI4ppXD8NTwydw-vGRcCq/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
         </ul>
       </nav>
@@ -37,8 +38,8 @@
           <span class="eyebrow">Experience</span>
           <h1 class="section-title">Where I've worked</h1>
           <p class="section-lead">
-            Building embedded and high-performance software for imaging payloads, sensor systems and
-            GPU-accelerated detection, from flight software to the ground station.
+            Building software where code meets hardware, from surgical robotics today to imaging
+            payloads, sensor systems and GPU-accelerated detection before that.
           </p>
         </div>
       </section>
@@ -46,8 +47,48 @@
       <section class="section">
         <div class="container">
           <ol class="timeline">
-            <!-- GEOST -->
+            <!-- Smith+Nephew -->
             <li class="timeline-item current reveal">
+              <article class="card job">
+                <div class="job-head">
+                  <div>
+                    <h2 class="job-role">Robotics Software Engineer</h2>
+                    <p class="job-company">Smith+Nephew</p>
+                  </div>
+                  <div class="job-meta">
+                    <span class="badge">Current</span>
+                    <span>Apr 2025 &ndash; Present</span>
+                  </div>
+                </div>
+
+                <p class="job-summary">Software for the CORI and ORCA surgical robotics platforms, including the Knee 3.1 and Knee 4.0 releases.</p>
+
+                <ul class="bullets job-summary">
+                  <li>Developed and maintained C++ software for medical navigation systems, integrating patient-specific JSON data and STL anatomical models for 3D visualization using GLTK.</li>
+                  <li>Implemented matrix transformations to convert tracking-system coordinates into anatomical space, enabling accurate positioning and rendering of 3D objects.</li>
+                  <li>Configured CMake and Makefiles with conditional compilation and preprocessor guards to isolate hardware-dependent functionality, enabling application development and testing across different hardware configurations.</li>
+                  <li>Refactored application states following the Model-View-ViewModel (MVVM) architecture and developed reusable GLTK-based GUI components, including dynamic tables, incrementors, and state-dependent interfaces.</li>
+                  <li>Developed automation scripts for data extraction and analysis, and used Clang-Tidy to enforce C++ coding standards and improve code quality across a large, multi-repository codebase.</li>
+                  <li>Authored software specifications, performed sprint-level testing, and tracked defects using Jira while managing collaborative development workflows through Git, including rebasing, branching, and merge conflict resolution.</li>
+                </ul>
+
+                <ul class="chips chips-sm" aria-label="Technologies">
+                  <li class="chip">C++</li>
+                  <li class="chip">Python</li>
+                  <li class="chip">Linux</li>
+                  <li class="chip">GLTK</li>
+                  <li class="chip">CMake / Make</li>
+                  <li class="chip">MVVM</li>
+                  <li class="chip">3D visualization</li>
+                  <li class="chip">Clang-Tidy</li>
+                  <li class="chip">Git</li>
+                  <li class="chip">Jira</li>
+                </ul>
+              </article>
+            </li>
+
+            <!-- GEOST -->
+            <li class="timeline-item reveal">
               <article class="card job">
                 <div class="job-head">
                   <div>
@@ -55,16 +96,15 @@
                     <p class="job-company">GEOST</p>
                   </div>
                   <div class="job-meta">
-                    <span class="badge">Current</span>
-                    <span>May 2023 &ndash; Present</span>
+                    <span>May 2023 &ndash; Apr 2025</span>
                     <span>Remote</span>
                   </div>
                 </div>
 
                 <ul class="bullets job-summary">
-                  <li>Contribute to NASA's open-source flight control system for satellite payloads.</li>
-                  <li>Collaborate with a team of 15+ engineers across 50+ pull requests and code reviews to ship high-quality software.</li>
-                  <li>Capture and process real-time imagery on NVIDIA Jetson, extending the platform's image-processing capabilities.</li>
+                  <li>Contributed to NASA's open-source flight control system for satellite payloads.</li>
+                  <li>Collaborated with a team of 15+ engineers across 50+ pull requests and code reviews to ship high-quality software.</li>
+                  <li>Captured and processed real-time imagery on NVIDIA Jetson, extending the platform's image-processing capabilities.</li>
                   <li>Built a test framework for debugging image-processing algorithms, cutting debugging time.</li>
                 </ul>
 

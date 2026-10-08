@@ -537,7 +537,7 @@ ul {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center;
   border-radius: 28px;
   box-shadow: var(--shadow-md);
 }
@@ -963,6 +963,161 @@ ul {
 .cta-band .hero-actions {
   margin-top: 0;
   justify-content: center;
+}
+
+/* ==========================================================================
+   Vlog
+   ========================================================================== */
+.container-narrow {
+  max-width: 800px;
+}
+
+.vlog-feed {
+  display: grid;
+  gap: 24px;
+}
+
+.post {
+  padding: 28px 30px;
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  margin-bottom: 12px;
+}
+
+.post-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.post-date:hover {
+  color: var(--accent);
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.post-body {
+  margin-top: 14px;
+  display: grid;
+  gap: 14px;
+  font-size: 16.5px;
+  line-height: 1.7;
+}
+
+.post-body a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.post-image {
+  margin: 20px 0 0;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.post-image figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.post-video {
+  margin-top: 20px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #000;
+}
+
+.post-video iframe,
+.post-video video {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.link-card {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--text);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.link-card:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.link-card-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.link-card-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.link-card-text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.link-card-title {
+  font-weight: 600;
+}
+
+.link-card-desc {
+  font-size: 14.5px;
+  color: var(--text-muted);
+}
+
+.link-card-host {
+  font-size: 13px;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .post {
+    padding: 22px 20px;
+  }
 }
 
 /* ==========================================================================
