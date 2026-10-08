@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experience | Kushal Kharel</title>
+    <meta name="description" content="Professional experience of Kushal Kharel: embedded and HPC software engineering at GEOST and ChemImage Corporation.">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main">
+        <a class="brand" href="index.html"><span class="brand-mark">KK</span>Kushal Kharel</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="Experience.html" aria-current="page">Experience</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a class="nav-cta" href="https://drive.google.com/file/d/1d7VbMsHnKekwI4ppXD8NTwydw-vGRcCq/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Experience</span>
+          <h1 class="section-title">Where I've worked</h1>
+          <p class="section-lead">
+            Building embedded and high-performance software for imaging payloads, sensor systems and
+            GPU-accelerated detection, from flight software to the ground station.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <ol class="timeline">
+            <!-- GEOST -->
+            <li class="timeline-item current reveal">
+              <article class="card job">
+                <div class="job-head">
+                  <div>
+                    <h2 class="job-role">HPC Embedded Software Engineer</h2>
+                    <p class="job-company">GEOST</p>
+                  </div>
+                  <div class="job-meta">
+                    <span class="badge">Current</span>
+                    <span>May 2023 &ndash; Present</span>
+                    <span>Remote</span>
+                  </div>
+                </div>
+
+                <ul class="bullets job-summary">
+                  <li>Contribute to NASA's open-source flight control system for satellite payloads.</li>
+                  <li>Collaborate with a team of 15+ engineers across 50+ pull requests and code reviews to ship high-quality software.</li>
+                  <li>Capture and process real-time imagery on NVIDIA Jetson, extending the platform's image-processing capabilities.</li>
+                  <li>Built a test framework for debugging image-processing algorithms, cutting debugging time.</li>
+                </ul>
+
+                <h4>Key achievements</h4>
+                <ul class="bullets">
+                  <li>Created and deployed a remote hardware-control feature that lets operators manage the payload from the ground system, reducing manual intervention.</li>
+                  <li>Engineered a robust UDP communication protocol between payload and ground systems, expanding testing capabilities.</li>
+                  <li>Integrated 2 advanced sensors into drone systems, with test scripts that monitor sensor health and reduce failure rates.</li>
+                  <li>Resolved image-capture timing issues by designing a smart queue that aligns system time with GPS time, keeping image timestamps accurate to within 250&nbsp;ms.</li>
+                  <li>Designed a serial ingest algorithm for Arduino coordinating 3 hardware components at 115200&nbsp;bps.</li>
+                </ul>
+
+                <ul class="chips chips-sm" aria-label="Technologies">
+                  <li class="chip">C</li>
+                  <li class="chip">C++</li>
+                  <li class="chip">Python</li>
+                  <li class="chip">Linux (CentOS, Ubuntu)</li>
+                  <li class="chip">NVIDIA Jetson</li>
+                  <li class="chip">Arduino</li>
+                  <li class="chip">CMake</li>
+                  <li class="chip">GDB</li>
+                  <li class="chip">Valgrind</li>
+                  <li class="chip">Git</li>
+                </ul>
+              </article>
+            </li>
+
+            <!-- ChemImage -->
+            <li class="timeline-item reveal">
+              <article class="card job">
+                <div class="job-head">
+                  <div>
+                    <h2 class="job-role">Embedded Software Engineer</h2>
+                    <p class="job-company">ChemImage Corporation</p>
+                  </div>
+                  <div class="job-meta">
+                    <span>May 2022 &ndash; May 2023</span>
+                    <span>Pittsburgh, PA</span>
+                  </div>
+                </div>
+
+                <ul class="bullets job-summary">
+                  <li>Introduced new features and capabilities for embedded products using object-oriented design.</li>
+                  <li>Ported 5+ C#/.NET features from separate products into a real-time C/C++ system on Linux.</li>
+                  <li>Leveraged NVIDIA GPUs to achieve real-time detection at high frame rates on embedded products.</li>
+                </ul>
+
+                <h4>Key achievements</h4>
+                <ul class="bullets">
+                  <li>Reduced product testing time with batch scripts that validate detection accuracy across large datasets, increasing test data coverage by 60%.</li>
+                  <li>Implemented a stereo-vision algorithm in the sensor system for depth measurement from imagery.</li>
+                </ul>
+
+                <ul class="chips chips-sm" aria-label="Technologies">
+                  <li class="chip">C++</li>
+                  <li class="chip">C</li>
+                  <li class="chip">C#</li>
+                  <li class="chip">Python</li>
+                  <li class="chip">NVIDIA CUDA</li>
+                  <li class="chip">OpenCV</li>
+                  <li class="chip">Linux</li>
+                  <li class="chip">Visual Studio</li>
+                  <li class="chip">Git / TFS</li>
+                </ul>
+              </article>
+            </li>
+
+            <!-- Starline Power -->
+            <li class="timeline-item reveal">
+              <article class="card job">
+                <div class="job-head">
+                  <div>
+                    <h2 class="job-role">Intern &middot; Reports Application</h2>
+                    <p class="job-company">Starline Power</p>
+                  </div>
+                  <div class="job-meta">
+                    <span>June 2021</span>
+                    <span>Internship</span>
+                  </div>
+                </div>
+
+                <ul class="bullets job-summary">
+                  <li>Developed a Windows reporting application in Python 3.8, using Pandas for data manipulation and Tkinter for a user-friendly GUI.</li>
+                  <li>Structured the app to import CSV files and let users customize and save report formats for their needs.</li>
+                  <li>Delivered the project with reliable, robust report generation.</li>
+                </ul>
+
+                <ul class="chips chips-sm" aria-label="Technologies">
+                  <li class="chip">Python</li>
+                  <li class="chip">Pandas</li>
+                  <li class="chip">Tkinter</li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card cta-band reveal">
+            <h2>Want the full picture?</h2>
+            <p>Grab my resume, or browse the hardware and software projects I've built along the way.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://drive.google.com/file/d/1d7VbMsHnKekwI4ppXD8NTwydw-vGRcCq/view?usp=sharing" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+                View resume
+              </a>
+              <a class="btn btn-secondary" href="Project.html">See projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year">2026</span> Kushal Kharel</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/kushal-kharel-11aa66170/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KushalKharell" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://drive.google.com/file/d/1d7VbMsHnKekwI4ppXD8NTwydw-vGRcCq/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

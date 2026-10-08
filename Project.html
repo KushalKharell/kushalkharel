@@ -1,79 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Kushal Kharel</title>
-    <link href="project_page.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="icon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Kushal Kharel</title>
+    <meta name="description" content="Selected hardware and software projects by Kushal Kharel: FPGA games, embedded robotics, MIPS assembly, Java and C.">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <script src="script.js"></script>
-    <header>
-      <div class="container"> 
-          <div id="branding"></div>
-          <nav>
-              <ul>
-                 <li> <a href="index.html">About</a></li>
-                 <li class="current"> <a href="Project.html">Projects</a></li>
-              </ul>
-          </nav>
-      </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main">
+        <a class="brand" href="index.html"><span class="brand-mark">KK</span>Kushal Kharel</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="Project.html" aria-current="page">Projects</a></li>
+          <li><a class="nav-cta" href="https://drive.google.com/file/d/1d7VbMsHnKekwI4ppXD8NTwydw-vGRcCq/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="ProjectBoxes">
-      <div class="box">
-        <img src="project_images/joy.PNG" alt="FPGA Game" class="project-image">
-        <div class="blockinfo">
-          <h5>FPGA game using Joystick, keyboard, vga, vhdl</h5>
-          <a href="https://github.com/KushalKharell/FPGA-game-using-ps2-keyboard-and-joystick" target="_blank" class="button">GitHub</a>
-          <a href="https://youtu.be/ZjYfLIouJn0" target="_blank" class="button">Demo</a>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Projects</span>
+          <h1 class="section-title">Things I've built</h1>
+          <p class="section-lead">
+            A mix of hardware and software work, from FPGA games and embedded robotics to
+            low-level assembly and object-oriented applications.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filters reveal" role="group" aria-label="Filter projects">
+            <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="hardware" aria-pressed="false">Hardware &amp; Embedded</button>
+            <button class="filter-btn" type="button" data-filter="software" aria-pressed="false">Software</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="card project reveal" data-category="hardware">
+              <div class="project-media contain">
+                <img src="project_images/joy.PNG" alt="FPGA game running on a VGA display" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">FPGA</span>
+                <h3>FPGA Game with Joystick &amp; Keyboard</h3>
+                <p>An interactive game written in VHDL on an FPGA, driven by a joystick and PS/2 keyboard and rendered over VGA.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">VHDL</li>
+                  <li class="chip">FPGA</li>
+                  <li class="chip">VGA</li>
+                  <li class="chip">PS/2</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/FPGA-game-using-ps2-keyboard-and-joystick" target="_blank" rel="noopener">GitHub</a>
+                  <a class="btn btn-primary btn-sm" href="https://youtu.be/ZjYfLIouJn0" target="_blank" rel="noopener">Watch demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal" data-category="software">
+              <div class="project-media contain">
+                <img src="project_images/java.png" alt="Java logo" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">Java</span>
+                <h3>Hospital Record Keeping</h3>
+                <p>A record-keeping program for managing hospital data, structured around object-oriented design principles.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">Java</li>
+                  <li class="chip">OOP</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/Hospital-Record-Keeping-program-Java" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal" data-category="software">
+              <div class="project-media contain">
+                <img src="project_images/project3.png" alt="Simon game rendered on a bitmap display" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">Assembly</span>
+                <h3>Simon Game in MIPS32</h3>
+                <p>The classic memory game implemented in MIPS32 assembly, with graphics drawn to a bitmap display.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">MIPS32</li>
+                  <li class="chip">Assembly</li>
+                  <li class="chip">Bitmap graphics</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/Simon-Game-MIPS-32-" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal" data-category="hardware">
+              <div class="project-media">
+                <img src="project_images/project4.jpg" alt="Obstacle avoidance robot car" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">Embedded</span>
+                <h3>Obstacle Avoidance System</h3>
+                <p>An ATmega328P-powered vehicle programmed in C that drives forward, detects obstacles within 20&nbsp;cm via ultrasonic sensing and steers toward open space.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">C</li>
+                  <li class="chip">ATmega328P</li>
+                  <li class="chip">HC-SR04</li>
+                  <li class="chip">Servo &amp; DC motors</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/Embedded_Sys_Proj" target="_blank" rel="noopener">GitHub</a>
+                  <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1FKk8YS_75CzmjMPBWzyD2zW7-q7o0JPo/view?usp=sharing" target="_blank" rel="noopener">Watch demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal" data-category="software">
+              <div class="project-media contain">
+                <img src="project_images/project5.PNG" alt="Java word game interface" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">Java</span>
+                <h3>Word-Based GUI Game</h3>
+                <p>A desktop word game with a graphical interface, built in Java using object-oriented design.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">Java</li>
+                  <li class="chip">GUI</li>
+                  <li class="chip">OOP</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/Java-GUI-word-based-game" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal" data-category="software">
+              <div class="project-media contain">
+                <img src="project_images/Project6.PNG" alt="Bitmap memory simulation output" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">C</span>
+                <h3>Bitmap Memory Simulation</h3>
+                <p>A simulation of memory allocation using a bitmap to track free and used blocks, written in C.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">C</li>
+                  <li class="chip">Memory management</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/Bitmap-memeory-simulation-in-C" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project reveal" data-category="hardware">
+              <div class="project-media">
+                <img src="project_images/robo-drummer.jpg" alt="Robotic drummer senior design project" loading="lazy">
+              </div>
+              <div class="project-body">
+                <span class="project-kicker">Senior Design &middot; Penn State</span>
+                <h3>Robotic Drummer</h3>
+                <p>A robotic drummer that acts as a physical metronome, built as the Penn State Behrend senior design capstone.</p>
+                <ul class="chips chips-sm">
+                  <li class="chip">Embedded</li>
+                  <li class="chip">Robotics</li>
+                  <li class="chip">Capstone</li>
+                </ul>
+                <div class="project-links">
+                  <a class="btn btn-secondary btn-sm" href="https://github.com/KushalKharell/RoboticDrummer" target="_blank" rel="noopener">GitHub</a>
+                  <a class="btn btn-primary btn-sm" href="https://sites.psu.edu/behrendseniordesign/2022/04/24/robo-drummer-physical-metronome/" target="_blank" rel="noopener">Read article</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year">2026</span> Kushal Kharel</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/kushal-kharel-11aa66170/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/KushalKharell" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://drive.google.com/file/d/1d7VbMsHnKekwI4ppXD8NTwydw-vGRcCq/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
-      <div class="box">
-        <img src="project_images/java.png" alt="Hospital Record" class="project-image">
-        <div class="blockinfo">
-          <h5>Hospital record keeping program coded using Java OOP</h5>
-          <a href="https://github.com/KushalKharell/Hospital-Record-Keeping-program-Java" target="_blank" class="button">GitHub</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="project_images/project3.png" alt="Simon Game" class="project-image">
-        <div class="blockinfo">
-          <h5>Simon game using MIPS 32 assembly using bitmaps</h5>
-          <a href="https://github.com/KushalKharell/Simon-Game-MIPS-32-" target="_blank" class="button">GitHub</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="project_images/project4.jpg" alt="Obstacle Avoidance" class="project-image">
-        <div class="blockinfo">
-          <h5>Obstacles avoidance system using microcontroller</h5>
-          <a href="https://github.com/KushalKharell/Embedded_Sys_Proj" target="_blank" class="button">GitHub</a>
-          <a href="https://drive.google.com/file/d/1FKk8YS_75CzmjMPBWzyD2zW7-q7o0JPo/view?usp=sharing" target="_blank" class="button">Demo</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="project_images/project5.PNG" alt="Java GUI Game" class="project-image">
-        <div class="blockinfo">
-          <h5>Java GUI word-based game using OOP</h5>
-          <a href="https://github.com/KushalKharell/Java-GUI-word-based-game" target="_blank" class="button">GitHub</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="project_images/Project6.PNG" alt="Memory Simulation" class="project-image">
-        <div class="blockinfo">
-          <h5>Memory simulation using Bitmap in C</h5>
-          <a href="https://github.com/KushalKharell/Bitmap-memeory-simulation-in-C" target="_blank" class="button">GitHub</a>
-        </div>
-      </div>
-      <div class="box">
-        <img src="project_images/robo-drummer.jpg" alt="Robotic Drummer" class="project-image">
-        <div class="blockinfo">
-          <h5>Robotic Drummer - Penn State Senior project</h5>
-          <a href="https://github.com/KushalKharell/RoboticDrummer" target="_blank" class="button">GitHub</a>
-          <a href="https://sites.psu.edu/behrendseniordesign/2022/04/24/robo-drummer-physical-metronome/" target="_blank" class="button">Article</a>
-        </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
